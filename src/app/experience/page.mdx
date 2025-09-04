@@ -1,5 +1,6 @@
 import tagira from "../../public/images/tagira.png";
 import praxy from "../../public/images/praxy.png";
+import padoa from "../../public/images/padoa.png";
 import blog from "../../public/images/blog.png";
 import Image from "next/image";
 import Link from "next/link";
@@ -10,12 +11,12 @@ import { Analytics } from "@vercel/analytics/react";
 <Analytics />
 
 <br />
-<br />
 
 ## Co-Founder & Lead Developer
 
-**Tagira** – _[Website](https://www.tagira.africa/)_
-_July 2023 – Present_
+<div className="flex justify-between items-center">
+  <p> **Tagira** </p> <p className="">_Jul 2023 – Aug 2024_ </p>{" "}
+</div>
 
 - Co-founded a mobile and web solution for B2B shop management dedicated to the Francophone African market.
 - Our goal is to create a comprehensive platform that streamlines online operations for small businesses in the region.
@@ -61,8 +62,46 @@ _July 2023 – Present_
 
 ## Software Developer Internship
 
-**Praxi.ai** – _[Website](https://praxysante.fr/)_  
-_Paris, France - February 2024 – July 2024 (6 months)_
+<div className="flex justify-between items-center">
+  <p> **Padoa** – _[Website](https://www.padoa.fr/) Paris, France_</p>{" "}
+  <p className="">_Feb–Aug 2025 (6 months)_</p>{" "}
+</div>
+{/* **Padoa** – _[Website](https://www.padoa.fr/)_   */}
+{/* _Paris, France - February 2025 – August 2025 (6 months)_ */}
+
+- Redesigned the Excel-based workforce and risk reporting module, optimised error handling.
+- Developed multi-position per employee support in Node.js/TypeScript, using feature flags for smooth, backward-compatible deployments, and worked with Elasticsearch (schema manipulation for data insertion).
+- Enhanced UX/UI of the Excel module by improving ergonomics, accessibility, error messages, and tooltips.
+- Participated in Quality Sprints, diagnosing and fixing production issues (Node.js, Angular, PostgreSQL, Elasticsearch), reducing support tickets and technical debt.
+- Acted as Scrum Master, leading agile rituals, managing inter-squad follow-ups, and facilitating technical communication.
+
+<Link
+  target="blank"
+  href={"https://www.padoa.fr/"}
+  className="hover:cursor-pointer w-full flex  mb-2"
+>
+  <Image
+    property=""
+    src={padoa}
+    alt="padoa"
+    width={400}
+    height={100}
+    className="rounded-md  border-[1px] border-gray-300 "
+  />
+</Link>
+
+<p className="text-gray-400  text-sm">Padoa's Homepage</p>
+
+<p className="pl-6 border border-gray-300 my-3 rounded-sm">
+  **Skills**: NodeJs, AngularJS, TypeScript, Elasticsearch, GitHub, PostgreSQL,
+  Agile Methods
+</p>
+
+<br />
+<div className="flex justify-between items-center">
+  <p> **Praxi.ai** – _[Website](https://praxysante.fr/) Paris, France_</p>
+  <p className="">_Feb–Jul 2024 (6 months)_</p>{" "}
+</div>
 
 - Designed the mobile version of the web application interface.
 - Implemented the frontend for the mobile application using Next.js and Tailwind CSS.
@@ -78,7 +117,7 @@ _Paris, France - February 2024 – July 2024 (6 months)_
   <Image
     property=""
     src={praxy}
-    alt="tagira"
+    alt="praxy"
     width={400}
     height={100}
     className="rounded-md  border-[1px] border-gray-300 "
