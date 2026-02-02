@@ -2,6 +2,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import { Header } from "./header";
 import { Footer } from "./footer";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,6 +41,7 @@ export default function RootLayout({
       <body className="max-w-2xl m-auto">
         <main className="p-6 pt-3 md:pt-6 min-h-screen">
           <Header />
+          <Analytics />
           {children}
         </main>
 

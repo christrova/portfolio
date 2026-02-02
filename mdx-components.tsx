@@ -13,6 +13,7 @@ import { Image } from "@/app//components/image";
 import { Caption } from "@/app//components/caption";
 
 import { Blockquote as blockquote } from "@/app//components/blockquote";
+import SeeMoreSection from "@/app/components/SeeMoreSection";
 
 export function useMDXComponents(components: {
   [component: string]: React.ComponentType;
@@ -33,5 +34,6 @@ export function useMDXComponents(components: {
     blockquote,
     Image,
     Caption,
+    SeeMoreSection,
   };
 }
