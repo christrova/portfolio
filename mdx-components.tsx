@@ -14,6 +14,7 @@ import { Caption } from "@/app//components/caption";
 
 import { Blockquote as blockquote } from "@/app//components/blockquote";
 import SeeMoreSection from "@/app/components/SeeMoreSection";
+import SkillsList from "@/app/components/SkillsList";
 
 export function useMDXComponents(components: {
   [component: string]: React.ComponentType;
@@ -35,5 +36,6 @@ export function useMDXComponents(components: {
     Image,
     Caption,
     SeeMoreSection,
+    SkillsList,
   };
 }

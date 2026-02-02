@@ -11,7 +11,7 @@ const NavButton = () => {
   return (
     <Link
       href={link}
-      className="inlin-flex hover:bg-gray-100 rounded-sm p-2 text-[#004AAD] "
+      className="inline-flex items-center hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg px-3 py-2 text-[#004AAD] dark:text-blue-400 text-sm md:text-base transition-colors"
     >
       {text}
     </Link>

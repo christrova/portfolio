@@ -38,8 +38,8 @@ export default function RootLayout({
       className={`${inter.className} antialiased`}
       suppressHydrationWarning={true}
     >
-      <body className="max-w-2xl m-auto">
-        <main className="p-6 pt-3 md:pt-6 min-h-screen">
+      <body className="max-w-2xl lg:max-w-4xl m-auto">
+        <main className="p-6 pt-3 md:pt-6 md:px-8 lg:px-10 min-h-screen">
           <Header />
           <Analytics />
           {children}

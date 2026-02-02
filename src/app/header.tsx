@@ -3,17 +3,18 @@ import NavButton from "./components/navButton";
 
 export function Header() {
   return (
-    <header className="flex mb-5 md:mb-10 ">
+    <header className="flex items-center border-b border-slate-200 dark:border-slate-800 pb-4 md:pb-5 mb-6 md:mb-10">
       <Logo />
 
-      <nav className="font-mono text-xs grow justify-end  flex gap-1 md:gap-3">
+      <nav className="font-mono text-xs md:text-sm lg:text-base grow justify-end flex items-center gap-1 md:gap-2">
         <NavButton />
         <a
           href="https://www.linkedin.com/in/christ-rova/"
           target="_blank"
-          className="flex gap-1 hover:bg-gray-100  dark:hover:bg-white dark:hover:text-black p-2 rounded-sm transition-[background-color] -mr-2"
+          rel="noopener noreferrer"
+          className="flex items-center gap-1.5 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 px-3 py-2 rounded-lg transition-colors -mr-1 "
         >
-          <Linkedin /> Linkedin
+          <Linkedin /> <p className="pt-1">LinkedIn</p>
         </a>
       </nav>
     </header>
@@ -24,8 +25,9 @@ function Linkedin() {
   return (
     <svg
       fill="currentColor"
-      width={12}
-      height={12}
+      width={15}
+      height={15}
+      className="shrink-0"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 310 310"
     >

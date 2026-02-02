@@ -2,158 +2,336 @@ import tagira from "../../public/images/tagira.png";
 import praxy from "../../public/images/praxy.png";
 import padoa from "../../public/images/padoa.png";
 import blog from "../../public/images/blog.png";
+import whatimon from "../../public/images/whatimon.png";
 import Image from "next/image";
 import Link from "next/link";
 
 # Experiences
 
-<br />
+<p className="text-slate-600 dark:text-slate-400 mt-1 mb-8 text-sm md:text-base lg:text-lg">
+  Professional work and personal projects
+</p>
 
-## Co-Founder & Lead Developer
+## Professional
 
-<div className="flex justify-between items-center">
-  <p> **Tagira** </p> <p className="">_Jul 2023 – Aug 2024_ </p>{" "}
+<div className="rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/40 shadow-sm p-6 md:p-8 lg:p-10 mb-8 md:mb-10">
+  <div className="flex flex-wrap justify-between items-baseline gap-2 mb-3 md:mb-4">
+    <h3 className="text-lg md:text-xl lg:text-2xl font-semibold text-slate-900 dark:text-slate-100">
+      Software Developer Internship · Padoa
+    </h3>
+    <span className="text-sm md:text-base lg:text-lg text-slate-500 dark:text-slate-400 italic">
+      Feb–Aug 2025 (6 months)
+    </span>
+  </div>
+
+  <ul className="list-disc pl-5 md:pl-6 space-y-1 md:space-y-2 text-sm md:text-base lg:text-lg text-slate-700 dark:text-slate-300 mb-4 md:mb-5">
+    <li>
+      Redesigned the Excel-based workforce and risk reporting module, optimised
+      error handling.
+    </li>
+    <li>
+      Developed multi-position per employee support in Node.js/TypeScript, using
+      feature flags for smooth, backward-compatible deployments, and worked with
+      Elasticsearch (schema manipulation for data insertion).
+    </li>
+    <li>
+      Enhanced UX/UI of the Excel module by improving ergonomics, accessibility,
+      error messages, and tooltips.
+    </li>
+    <li>
+      Participated in Quality Sprints, diagnosing and fixing production issues
+      (Node.js, Angular, PostgreSQL, Elasticsearch), reducing support tickets
+      and technical debt.
+    </li>
+    <li>
+      Acted as Scrum Master, leading agile rituals, managing inter-squad
+      follow-ups, and facilitating technical communication.
+    </li>
+  </ul>
+  <Link
+    href="https://www.padoa.fr/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block mb-2"
+  >
+    <Image
+      src={padoa}
+      alt="Padoa"
+      width={400}
+      height={100}
+      className="rounded-lg border border-slate-200 dark:border-slate-600 w-full max-w-md lg:max-w-lg"
+    />
+  </Link>
+  <p className="text-slate-400 dark:text-slate-500 text-xs md:text-sm mb-4 md:mb-5">
+    Padoa&apos;s Homepage
+  </p>
+  <SkillsList skills="Node.js, AngularJS, TypeScript, Elasticsearch, GitHub, PostgreSQL, Agile Methods" />
 </div>
 
-- Co-founded a mobile and web solution for B2B shop management dedicated to the Francophone African market.
-- Our goal is to create a comprehensive platform that streamlines online operations for small businesses in the region.
-- Acquired knowledge in business strategy and software development, covering the entire software lifecycle from requirements gathering to implementation, maintenance, and continuous improvement.
-- Emphasized data security and software robustness, adhering to three key principles: integrity, confidentiality, and availability, which are central to this project.
+<div className="rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/40 shadow-sm p-6 md:p-8 lg:p-10 mb-8 md:mb-10">
+  <div className="flex flex-wrap justify-between items-baseline gap-2 mb-3 md:mb-4">
+    <h3 className="text-lg md:text-xl lg:text-2xl font-semibold text-slate-900 dark:text-slate-100">
+      Software Developer Internship · Praxi.ai
+    </h3>
+    <span className="text-sm md:text-base lg:text-lg text-slate-500 dark:text-slate-400 italic">
+      Feb–Jul 2024 (6 months)
+    </span>
+  </div>
 
-**Projects within Tagira**:
-
-- **Mobile Application**: Enabling vendors to manage their sales (led by my collaborator).
-- **Bio Link Service**: Centralizing links for each business, based on a subdomain \*.tagira.bio (led by my collaborator).
-- **E-commerce Template**: Developed by myself, providing a shop for each business.
-- **REST API**: Developed with essential security measures to ensure data confidentiality and prevent injections (developed with my collaborator).
-
-<p className=" border pl-6 border-gray-300 my-3 rounded-sm">
-  **Skills**: Node.JS, Agile Methods, Next.js, PostgreSQL, GitHub, AWS,
-  TypeScript, JavaScript, UX/UI, Tailwind CSS, Figma, TypeORM
-</p>
-
-**Key Takeaway**:
-
-- The importance of a positive work atmosphere, teamwork, and interpersonal skills has been a recurring theme across all these projects.
-- These elements are essential for the successful execution of any project.
-
-<Link
-  target="blank"
-  href={"https://www.tagira.africa/"}
-  className="hover:cursor-pointer w-full flex mb-2"
->
-  <Image
-    priority
-    src={tagira}
-    alt="tagira"
-    width={400}
-    height={100}
-    className="rounded-md  border-[1px] border-gray-300"
-  />
-</Link>
-
-<p className="text-gray-400 text-sm ">Tagira's Homepage</p>
-
-<br />
-<br />
-
-## Software Developer Internship
-
-<div className="flex justify-between items-center">
-  <p> **Padoa** – _[Website](https://www.padoa.fr/) Paris, France_</p>{" "}
-  <p className="">_Feb–Aug 2025 (6 months)_</p>{" "}
+  <ul className="list-disc pl-5 md:pl-6 space-y-1 md:space-y-2 text-sm md:text-base lg:text-lg text-slate-700 dark:text-slate-300 mb-4 md:mb-5">
+    <li>Designed the mobile version of the web application interface.</li>
+    <li>
+      Implemented the frontend for the mobile application using Next.js and
+      Tailwind CSS.
+    </li>
+    <li>
+      Developed the calendar feature and created email notifications using
+      Directus Mailer, including automatic reminders for events.
+    </li>
+    <li>
+      Led the integration of external software (Efficience), enabling 100% of
+      users to access it seamlessly within the Praxi.ai platform.
+    </li>
+    <li>
+      Enhanced software functionalities by adding autocomplete features and an
+      audio file upload component for improved user experience.
+    </li>
+  </ul>
+  <Link
+    href="https://praxysante.fr/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block mb-2"
+  >
+    <Image
+      src={praxy}
+      alt="Praxi.ai"
+      width={400}
+      height={100}
+      className="rounded-lg border border-slate-200 dark:border-slate-600 w-full max-w-md lg:max-w-lg"
+    />
+  </Link>
+  <p className="text-slate-400 dark:text-slate-500 text-xs md:text-sm mb-4 md:mb-5">
+    The Praxi.ai Homepage
+  </p>
+  <SkillsList skills="Directus CMS, Agile Methods, Next.js, GitHub, AWS, TypeScript, JavaScript, React.js, UX/UI, Tailwind CSS, Figma" />
 </div>
 
-- Redesigned the Excel-based workforce and risk reporting module, optimised error handling.
-- Developed multi-position per employee support in Node.js/TypeScript, using feature flags for smooth, backward-compatible deployments, and worked with Elasticsearch (schema manipulation for data insertion).
-- Enhanced UX/UI of the Excel module by improving ergonomics, accessibility, error messages, and tooltips.
-- Participated in Quality Sprints, diagnosing and fixing production issues (Node.js, Angular, PostgreSQL, Elasticsearch), reducing support tickets and technical debt.
-- Acted as Scrum Master, leading agile rituals, managing inter-squad follow-ups, and facilitating technical communication.
+## Personal
 
-<Link
-  target="blank"
-  href={"https://www.padoa.fr/"}
-  className="hover:cursor-pointer w-full flex  mb-2"
->
-  <Image
-    property=""
-    src={padoa}
-    alt="padoa"
-    width={400}
-    height={100}
-    className="rounded-md  border-[1px] border-gray-300 "
-  />
-</Link>
+<div className="rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/40 shadow-sm p-6 md:p-8 lg:p-10 mb-8 md:mb-10">
+  <div className="flex flex-wrap justify-between items-baseline gap-2 mb-3 md:mb-4">
+    <h3 className="text-lg md:text-xl lg:text-2xl font-semibold text-slate-900 dark:text-slate-100">
+      En ce moment · Whatimon
+    </h3>
+    <span className="text-sm md:text-base lg:text-lg text-slate-500 dark:text-slate-400 italic">
+      Jan 2026 – Present
+    </span>
+  </div>
 
-<p className="text-gray-400  text-sm">Padoa's Homepage</p>
-
-<p className="pl-6 border border-gray-300 my-3 rounded-sm">
-  **Skills**: NodeJs, AngularJS, TypeScript, Elasticsearch, GitHub, PostgreSQL,
-  Agile Methods
-</p>
-
-<br />
-<div className="flex justify-between items-center">
-  <p> **Praxi.ai** – _[Website](https://praxysante.fr/) Paris, France_</p>
-  <p className="">_Feb–Jul 2024 (6 months)_</p>{" "}
+  <ul className="list-disc pl-5 md:pl-6 space-y-1 md:space-y-2 text-sm md:text-base lg:text-lg text-slate-700 dark:text-slate-300 mb-4 md:mb-5">
+    <li>
+      Developed a platform dedicated to personal branding and activity tracking,
+      allowing users to manage their presence through private dashboards and
+      SEO-friendly public profiles.
+    </li>
+    <li>
+      The project focuses on providing a seamless way for users to showcase
+      &quot;what they are on&quot; (current projects, tools, or status) while
+      maintaining granular control over their data visibility.
+    </li>
+    <li>
+      Architected a secure and scalable infrastructure using a BaaS (Backend as
+      a Service) approach to prioritize rapid deployment and data integrity.
+    </li>
+    <li>
+      Implemented advanced security protocols to ensure that user data is only
+      accessible based on specific roles and permissions.
+    </li>
+  </ul>
+  <p className="text-sm md:text-base lg:text-lg font-medium text-slate-800 dark:text-slate-200 mb-1 md:mb-2">
+    Key Features within Whatimon:
+  </p>
+  <ul className="list-disc pl-5 md:pl-6 space-y-1 md:space-y-2 text-sm md:text-base lg:text-lg text-slate-700 dark:text-slate-300 mb-4 md:mb-5">
+    <li>
+      <strong>Private Dashboard:</strong> A management interface for users to
+      model their data, track progress, and configure their profile settings.
+    </li>
+    <li>
+      <strong>Public Profiles:</strong> Generated SEO-optimized pages designed
+      to be indexed by search engines, showcasing user-curated content to the
+      public.
+    </li>
+    <li>
+      <strong>Security &amp; Access Control:</strong> Integrated Supabase Auth
+      and Row Level Security (RLS) to enforce strict data isolation and
+      role-based access.
+    </li>
+    <li>
+      <strong>Data Modeling:</strong> Designed a relational database structure
+      in PostgreSQL to handle complex user relationships and content visibility
+      states.
+    </li>
+  </ul>
+  <Link
+    href="https://whatimon.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center text-sm md:text-base lg:text-lg text-[#004AAD] dark:text-blue-400 hover:underline mb-4 md:mb-5"
+  >
+    Visit whatimon.com →
+  </Link>
+  <Link
+    href="https://whatimon.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block"
+  >
+    <Image
+      src={whatimon}
+      alt="Tagira"
+      width={400}
+      height={100}
+      className="rounded-lg border border-slate-200 dark:border-slate-600 w-full max-w-md lg:max-w-lg"
+    />
+  </Link>
+  <SkillsList skills="Next.js, TypeScript, Supabase, PostgreSQL, Git, SEO, Row Level Security (RLS), Data Modeling, Authentication, Tailwind CSS" />
 </div>
 
-- Designed the mobile version of the web application interface.
-- Implemented the frontend for the mobile application using Next.js and Tailwind CSS.
-- Developed the calendar feature and created email notifications using Directus Mailer, including automatic reminders for events.
-- Led the integration of external software (Efficience), enabling 100% of users to access it seamlessly within the Praxi.ai platform
-- Enhanced software functionalities by adding autocomplete features and an audio file upload component for improved user experience.
+<div className="rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/40 shadow-sm p-6 md:p-8 lg:p-10 mb-8 md:mb-10">
+  <div className="flex flex-wrap justify-between items-baseline gap-2 mb-3 md:mb-4">
+    <h3 className="text-lg md:text-xl lg:text-2xl font-semibold text-slate-900 dark:text-slate-100">
+      Co-Founder &amp; Lead Developer · Tagira
+    </h3>
+    <span className="text-sm md:text-base lg:text-lg text-slate-500 dark:text-slate-400 italic">
+      Jul 2023 – Aug 2024 (13 months)
+    </span>
+  </div>
+  <p className="text-slate-600 dark:text-slate-300 text-sm md:text-base lg:text-lg mb-3 md:mb-4">
+    Francophone African market
+  </p>
+  <ul className="list-disc pl-5 md:pl-6 space-y-1 md:space-y-2 text-sm md:text-base lg:text-lg text-slate-700 dark:text-slate-300 mb-4 md:mb-5">
+    <li>
+      Co-founded a mobile and web solution for B2B shop management dedicated to
+      the Francophone African market.
+    </li>
+    <li>
+      Our goal is to create a comprehensive platform that streamlines online
+      operations for small businesses in the region.
+    </li>
+    <li>
+      Acquired knowledge in business strategy and software development, covering
+      the entire software lifecycle from requirements gathering to
+      implementation, maintenance, and continuous improvement.
+    </li>
+    <li>
+      Emphasized data security and software robustness, adhering to three key
+      principles: integrity, confidentiality, and availability, which are
+      central to this project.
+    </li>
+  </ul>
+  <p className="text-sm md:text-base lg:text-lg font-medium text-slate-800 dark:text-slate-200 mb-1 md:mb-2">
+    Projects within Tagira:
+  </p>
+  <ul className="list-disc pl-5 md:pl-6 space-y-1 md:space-y-2 text-sm md:text-base lg:text-lg text-slate-700 dark:text-slate-300 mb-4 md:mb-5">
+    <li>
+      <strong>Mobile Application:</strong> Enabling vendors to manage their
+      sales (led by my collaborator).
+    </li>
+    <li>
+      <strong>Bio Link Service:</strong> Centralizing links for each business,
+      based on a subdomain *.tagira.bio (led by my collaborator).
+    </li>
+    <li>
+      <strong>E-commerce Template:</strong> Developed by myself, providing a
+      shop for each business.
+    </li>
+    <li>
+      <strong>REST API:</strong> Developed with essential security measures to
+      ensure data confidentiality and prevent injections (developed with my
+      collaborator).
+    </li>
+  </ul>
+  <p className="text-sm md:text-base lg:text-lg text-slate-600 dark:text-slate-300 mb-4 md:mb-5">
+    <strong>Key Takeaway:</strong> The importance of a positive work atmosphere,
+    teamwork, and interpersonal skills has been a recurring theme across all
+    these projects. These elements are essential for the successful execution of
+    any project.
+  </p>
+  <Link
+    href="https://www.tagira.africa/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center text-sm md:text-base lg:text-lg text-[#004AAD] dark:text-blue-400 hover:underline mb-4 md:mb-5"
+  >
+    Visit tagira.africa →
+  </Link>
+  <Link
+    href="https://www.tagira.africa/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block"
+  >
+    <Image
+      src={tagira}
+      alt="Tagira"
+      width={400}
+      height={100}
+      className="rounded-lg border border-slate-200 dark:border-slate-600 w-full max-w-md lg:max-w-lg"
+    />
+  </Link>
+  <p className="text-slate-400 dark:text-slate-500 text-xs md:text-sm mb-4 md:mb-5">
+    Tagira&apos;s Homepage
+  </p>
+  <SkillsList skills="Node.js, Agile Methods, Next.js, PostgreSQL, GitHub, AWS, TypeScript, JavaScript, UX/UI, Tailwind CSS, Figma, TypeORM" />
+</div>
 
-<Link
-  target="blank"
-  href={"https://praxysante.fr/"}
-  className="hover:cursor-pointer w-full flex  mb-2"
->
-  <Image
-    property=""
-    src={praxy}
-    alt="praxy"
-    width={400}
-    height={100}
-    className="rounded-md  border-[1px] border-gray-300 "
-  />
-</Link>
-
-<p className="text-gray-400  text-sm">The Praxi.ai Homepage</p>
-
-<p className="pl-6 border border-gray-300 my-3 rounded-sm">
-  **Skills**: Directus CMS, Agile Methods, Next.js, GitHub, AWS, TypeScript,
-  JavaScript, React.js, UX/UI, Tailwind CSS, Figma
-</p>
-
-<br />
-<br />
-
-## Development of a Blog
-
-**GitHub Repository**: [Blog Project](https://github.com/RovaEncoder/ece-wepapp-abessolo-affadjene)
-_School Project_
-
-- This project introduced me to web programming and allowed me to explore the powerful React.js framework, specifically Next.js.
-- I was impressed by the capabilities of Supabase (BaaS), which covers authentication, authorization, file storage, data storage, and real-time notifications.
-
-<Link
-  target="blank"
-  href={"https://github.com/RovaEncoder/ece-wepapp-abessolo-affadjene"}
-  className="hover:cursor-pointer w-full flex  mb-2"
->
-  <Image
-    priority
-    src={blog}
-    alt="tagira"
-    width={400}
-    height={100}
-    className="rounded-md  border-[1px] border-gray-300"
-  />
-</Link>
-
-<p className="text-gray-400  text-sm">The blog Homepage</p>
-
-<p className="pl-6 border border-gray-300 my-3 rounded-sm">
-  **Skills**: Next.js, GitHub, JavaScript, UX/UI, Tailwind CSS, Figma, Supabase
-</p>
+<div className="rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/40 shadow-sm p-6 md:p-8 lg:p-10 mb-8 md:mb-10">
+  <div className="flex flex-wrap justify-between items-baseline gap-2 mb-3 md:mb-4">
+    <h3 className="text-lg md:text-xl lg:text-2xl font-semibold text-slate-900 dark:text-slate-100">
+      Development of a Blog
+    </h3>
+    <span className="text-sm md:text-base lg:text-lg text-slate-500 dark:text-slate-400 italic">
+      School Project
+    </span>
+  </div>
+  <p className="text-slate-600 dark:text-slate-300 text-sm md:text-base lg:text-lg mb-3 md:mb-4">
+    <a
+      href="https://github.com/RovaEncoder/ece-wepapp-abessolo-affadjene"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-[#004AAD] dark:text-blue-400 hover:underline"
+    >
+      GitHub Repository
+    </a>
+  </p>
+  <ul className="list-disc pl-5 md:pl-6 space-y-1 md:space-y-2 text-sm md:text-base lg:text-lg text-slate-700 dark:text-slate-300 mb-4 md:mb-5">
+    <li>
+      This project introduced me to web programming and allowed me to explore
+      the powerful React.js framework, specifically Next.js.
+    </li>
+    <li>
+      I was impressed by the capabilities of Supabase (BaaS), which covers
+      authentication, authorization, file storage, data storage, and real-time
+      notifications.
+    </li>
+  </ul>
+  <Link
+    href="https://github.com/RovaEncoder/ece-wepapp-abessolo-affadjene"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block mb-2"
+  >
+    <Image
+      src={blog}
+      alt="Blog"
+      width={400}
+      height={100}
+      className="rounded-lg border border-slate-200 dark:border-slate-600 w-full max-w-md lg:max-w-lg"
+    />
+  </Link>
+  <p className="text-slate-400 dark:text-slate-500 text-xs md:text-sm mb-4 md:mb-5">
+    The blog Homepage
+  </p>
+  <SkillsList skills="Next.js, GitHub, JavaScript, UX/UI, Tailwind CSS, Figma, Supabase" />
+</div>
