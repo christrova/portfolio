@@ -3,6 +3,7 @@ import praxy from "../../public/images/praxy.png";
 import padoa from "../../public/images/padoa.png";
 import blog from "../../public/images/blog.png";
 import whatimon from "../../public/images/whatimon.png";
+import basicshop from "../../public/images/basicshop.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -206,6 +207,58 @@ import Link from "next/link";
 <div className="rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/40 shadow-sm p-6 md:p-8 lg:p-10 mb-8 md:mb-10">
   <div className="flex flex-wrap justify-between items-baseline gap-2 mb-3 md:mb-4">
     <h3 className="text-lg md:text-xl lg:text-2xl font-semibold text-slate-900 dark:text-slate-100">
+      Basic shop
+    </h3>
+    <span className="text-sm md:text-base lg:text-lg text-slate-500 dark:text-slate-400 italic">
+      Apr 2026
+    </span>
+  </div>
+
+<Link
+  href="https://basic-shop-demo.vercel.app/products"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block mb-2"
+>
+  <Image
+    src={basicshop}
+    alt="Basic shop"
+    width={400}
+    height={100}
+    className="rounded-lg border border-slate-200 dark:border-slate-600 w-full max-w-md lg:max-w-lg"
+  />
+</Link>
+<p className="text-slate-400 dark:text-slate-500 text-xs md:text-sm mb-4 md:mb-5 flex items-center gap-2 flex-nowrap">
+  <Link
+    href="https://basic-shop-demo.vercel.app/products"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-[#004AAD] dark:text-blue-400 hover:underline shrink-0"
+  >
+    Visit basic-shop-demo.vercel.app →
+  </Link>
+</p>
+<SkillsList skills="Java, Spring Boot, Angular, PostgreSQL, Git" />
+
+  <ul className="list-disc pl-5 md:pl-6 space-y-1 md:space-y-2 text-sm md:text-base lg:text-lg text-slate-700 dark:text-slate-300 mb-4 md:mb-5">
+    <li>
+      Built a Spring Boot REST API to manage a product catalog.
+    </li>
+    <li>
+      Used Spring Data JPA to persist and retrieve data reliably.
+    </li>
+    <li>
+      Connected an Angular frontend to the API to validate request/response flows.
+    </li>
+    <li>
+      Deployed the PostgreSQL database on Render and the Angular app on Vercel.
+    </li>
+  </ul>
+</div>
+
+<div className="rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/40 shadow-sm p-6 md:p-8 lg:p-10 mb-8 md:mb-10">
+  <div className="flex flex-wrap justify-between items-baseline gap-2 mb-3 md:mb-4">
+    <h3 className="text-lg md:text-xl lg:text-2xl font-semibold text-slate-900 dark:text-slate-100">
       Co-Founder &amp; Lead Developer · Tagira
     </h3>
     <span className="text-sm md:text-base lg:text-lg text-slate-500 dark:text-slate-400 italic">
@@ -238,7 +291,7 @@ import Link from "next/link";
 </Link>
 {/* </p> */}
 
-<SkillsList skills="Node.js, Agile Methods, Next.js, PostgreSQL, GitHub, AWS, TypeScript, JavaScript, UX/UI, Tailwind CSS, Figma, TypeORM" />
+<SkillsList skills="Spring Boot, Node.js, Agile Methods, Next.js, PostgreSQL, GitHub, AWS, TypeScript, JavaScript, UX/UI, Tailwind CSS, Figma, TypeORM" />
 
 <p className="text-slate-600 dark:text-slate-300 text-sm md:text-base lg:text-lg mb-3 md:mb-4">
   Francophone African market
