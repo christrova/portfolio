@@ -1,5 +1,6 @@
 import { Logo } from "./logo";
 import NavButton from "./components/navButton";
+import LanguageToggle from "./components/LanguageToggle";
 
 export function Header() {
   return (
@@ -8,6 +9,7 @@ export function Header() {
 
       <nav className="font-mono text-xs md:text-sm lg:text-base grow justify-end flex items-center gap-1 md:gap-2">
         <NavButton />
+        <LanguageToggle />
         <a
           href="https://www.linkedin.com/in/christ-rova/"
           target="_blank"
