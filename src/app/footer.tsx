@@ -10,7 +10,10 @@ export function Footer() {
         </A>
         )
       </div>
-      <div>
+      <div className="flex items-center gap-3">
+        <A target="_blank" href="https://github.com/christrova">
+          GitHub
+        </A>
         <A target="_blank" href="https://github.com/RovaEncoder/portfolio">
           Source
         </A>

@@ -16,7 +16,7 @@ export function Header() {
           rel="noopener noreferrer"
           className="flex items-center gap-1.5 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 px-3 py-2 rounded-lg transition-colors -mr-1 "
         >
-          <Linkedin /> <p className="pt-1">LinkedIn</p>
+          <Linkedin /> <p className="pt-1 hidden sm:block">LinkedIn</p>
         </a>
       </nav>
     </header>
